@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu {
+    background-color: #a3080c;
+    text-align: center;
+    padding: 7px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 10px 50px 5px rgb(122, 122, 122);
+    z-index: 2;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 60px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.foods {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.foods .item {
+    width: 300px;
+    margin-top: 40px;
+    height: 100%;
+    border-radius: 20px;
+    transition: 400ms;
+    box-shadow: 10px 10px 50px 5px rgb(214, 208, 208);
+    z-index: 1;
+}
+
+.foods .item:hover {
+    transform: scale(1.05);
+    transition: 400ms;
+    box-shadow: 10px 10px 50px 10px rgb(167, 162, 162);
+}
+
+.foods .item img {
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.foods .item .text {
+    padding: 0 20px 30px 20px;
+}
+
+.order {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0;
+    background-image: linear-gradient(108deg, #55133c, #771a39, #982235, #ba2a2f);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.order:hover {
+    background-color: #6b090d;
+    transition: 600ms;
+}
+
+footer {
+    height: 300px;
+}
+
+.rating {
+    font-size: 15px;
+}
+
+.right {
+    float: right;
+}
+
+.active {
+    color: #ceab10;
+}
+
+@media (max-width: 769px) {
+    body {
+        background-color: aquamarine;
+    }
+    .foods {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 500px) {
+    body {
+        background-color: blueviolet;
+    }
+    .menu {
+        background-color: #ceab10;
+    }
+}
+
+@media (orientation: landscape) {
+    .logo {
+        display: none;
+    }
+}
